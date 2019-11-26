@@ -9,28 +9,74 @@
         margin-right: 10px;
         color: #778899;
       }
+
+      .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
     </style>
 </head>
 <body>
 <br>
 <div class="header">
-  <table style="width:100%">
-  <tr>
-  </tr>
-  <tr>
-      <td style="color:black "><h1>GenclikMerkezi</h1></td>
+  <table>
+      <tr>
+          <td style="color:black "><h1>GenclikMerkezi</h1></td>
+      </tr>
+   <tr>
+
     <td>
-        <div class="header-right" align="right">
-            <font size="5" color="Blue">
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#events">Events</a>
-        <a href="#about">About Us</a>
-        <a class="active" href="#home" >Home</a>
-          </font>
+        <div class="header-right" align="left">
+            <font size="3" color="Blue">
+
+                <div class="dropdown">
+                  <button class="dropbtn">Menus</button>
+                    <div class="dropdown-content">
+                        <a href="#contact">Contact</a>
+                        <a href="#about">About</a>
+                        <a href="#news" >News</a>
+                        <a href="#events">Events</a>
+                        <a href="#about">About Us</a>
+                        <a class="active" href="#home" >Home</a>
+                    </div>
+                </div>
+
+            </font>
       </div>
-  </tr>
+    </td>
+   </tr>
 </table>
 </div>
 </body>
