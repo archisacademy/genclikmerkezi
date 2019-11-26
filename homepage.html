@@ -4,23 +4,33 @@
   <title>Genclik Merkezi</title>
   <link rel="shortcut icon" href="img/logo.ico" />
   <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
       li {
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 100px;
+        margin-right: 100px;
         color: #778899;
+        font-size: 40;
       }
 
-      .dropbtn {
+.dropbtn {
   background-color: #4CAF50;
   color: white;
   padding: 15px;
-  font-size: 15px;
+  font-size: 20px;
   border: none;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  float: right;
 }
 
 .dropdown-content {
@@ -30,29 +40,28 @@
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  right: 0;
 }
 
 .dropdown-content a {
-  color: black;
+  color: red;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  float: right;
+
 }
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
     </style>
 </head>
 <body>
 <br>
 <div class="header">
-  <table>
-      <tr>
-          <td style="color:black "><h1>GenclikMerkezi</h1></td>
-      </tr>
-   <tr>
-    <td>
-        <div class="header-right" align="right">
+        <div class="header" >
+            <li>GenclikMerkezi</li>
             <font size="3" color="Blue">
                 <div class="dropdown">
                   <button class="dropbtn">Menus</button>
@@ -62,25 +71,8 @@
                         <a href="#contact">Contact</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                  <button class="dropbtn">Events</button>
-                    <div class="dropdown-content">
-                        <a href="#classes">Classes</a>
-                        <a href="#meetups">Meetups</a>
-                        <a href="#social-events" >Social Events</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                  <button class="dropbtn">News</button>
-                    <div class="dropdown-content">
-                        <a href="#community-news">Community News</a>
-                        <a href="#upcomming-classes">Upcomming Classes</a>
-                    </div>
-                </div>
             </font>
       </div>
-    </td>
-   </tr>
 </table>
 </div>
 </body>
