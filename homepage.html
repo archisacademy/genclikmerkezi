@@ -4,6 +4,12 @@
   <title>Genclik Merkezi</title>
   <link rel="shortcut icon" href="img/logo.ico" />
   <style>
+
+.header{
+    font-size: 15;
+    color: blue;
+    margin-right: 20;
+  }
 ul {
   list-style-type: none;
   margin: 0;
@@ -15,17 +21,19 @@ ul {
         display: inline-block;
         margin-right: 100px;
         margin-right: 100px;
-        color: #778899;
+        color: blue;
         font-size: 40;
       }
 
 .dropbtn {
   background-color: #4CAF50;
-  color: white;
+  color: red;
   padding: 15px;
   font-size: 20px;
   border: none;
-  margin:5
+  margin-right: 2px;
+
+
 }
 
 .dropdown {
@@ -41,16 +49,19 @@ ul {
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  right: 0;
+  float: left;
 }
 
 .dropdown-content a {
   color: red;
-  padding: 12px 16px;
+  padding: 15px 20px;
   text-decoration: none;
   display: block;
-  float: right;
 
+}
+.topnav {
+  background-color: gray;
+  overflow: hidden;
 }
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
@@ -60,29 +71,31 @@ ul {
 </head>
 <body>
 <br>
-<div class="header">
-        <div class="header" >
+    <div class="header" >
             <li>GenclikMerkezi</li>
-            <font size="3" color="Blue">
-                <div class="dropdown">
-                  <button class="dropbtn">Menus</button>
-                    <div class="dropdown-content">
-                        <a class="active" href="#home" >Home</a>
-                        <a href="#about">About Us</a>
-                        <a href="#contact">Contact</a>
+                    <div class="dropdown">
+                      <button class="dropbtn">Menue</button>
+                        <div class="dropdown-content">
+                            <a href="#home">Home</a>
+                            <a href="#about">About Us</a>
+                            <a href="#contact">Contact</a>
+                        </div>
                     </div>
-                </div>
-                <div class="dropdown">
-                  <button class="dropbtn">Menus</button>
-                    <div class="dropdown-content">
-                        <a class="active" href="#home" >Home</a>
-                        <a href="#about">About Us</a>
-                        <a href="#contact">Contact</a>
+                    <div class="dropdown">
+                      <button class="dropbtn">Events</button>
+                        <div class="dropdown-content">
+                            <a href="#classes">Classes</a>
+                            <a href="#meetup">Meetups</a>
+                            <a href="#socialevent">Social Events</a>
+                        </div>
                     </div>
-                </div>
-            </font>
-      </div>
-</table>
-</div>
+        <div class="dropdown">
+                      <button class="dropbtn">News</button>
+                        <div class="dropdown-content">
+                            <a href="#cummnews">Community News</a>
+                            <a href="#upcommingnews">Upcoming News</a>
+                        </div>
+                    </div>
+    </div>
 </body>
 </html>
